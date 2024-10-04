@@ -225,8 +225,11 @@ function checkLastDigit(a,b,c){
 checkLastDigit(13, 23, 33);
 //37. Write a JavaScript program to produce a new string that has the first 3 characters in lower case from a given string. If the string length is less than 3 convert all the characters to upper case.
 function newString(a){
-  let b = a.toLowerCase(3);
-  console.log(b);
+  if(a.length<=3){
+    return a.toUpperCase();
+  }else{
+    return a.slice(0,3).toLowerCase()+a.slice(3);
+  }
 }
-newString('ABCDE')
+console.log(newString('aaaAAA'));
 
