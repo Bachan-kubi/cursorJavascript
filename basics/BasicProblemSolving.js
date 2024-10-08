@@ -242,3 +242,24 @@ function mark(totalMark, isFinalExam){
   }
 };
 console.log(mark(98, false));
+//39. Write a JavaScript program to compute the sum of the two given integers. If the sum is in the range 50..80 return 65 otherwise return 80.
+
+function sumInt(a,b){
+  let c = a+b;
+  if(c<=80 && c>=50){
+    return 65;
+  }else{
+    return 80;
+  }
+}
+console.log(sumInt(100,500));
+// 40. Write a JavaScript program to check from two given integers whether one of them is 8 or their sum or difference is 8.  
+function intChecked(a,b){
+   if(a===8 || b===8 ||a+b===8 || Math.abs(a-b)===8){
+    return true;
+   }else{
+    return false;
+   }
+}
+console.log(intChecked(4,4));
+// 41. Write a JavaScript program to check a set of three numbers; if the three numbers are the same return 30; otherwise return 20; and if two numbers are the same return 40.
