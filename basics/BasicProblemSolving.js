@@ -273,3 +273,26 @@ function checkedTree(a,b,c){
   }
 }
 console.log(checkedTree(20,10, 154));
+// 42. Write a JavaScript program to check whether three given numbers are increasing in strict or in soft mode. 
+function increaseNo(a,b,c){
+  if(a<b&&b<c){
+    return 'strick Mode!';
+  }else if(a>=b && a<c){
+    return 'soft mode!';
+  }else{
+    return false;
+  }
+}
+console.log(increaseNo(10,9,14));
+//43. Write a JavaScript program to check from three given numbers (non negative integers) that two or all of them have the same rightmost digit.  
+function checkedNot(a,b,c){
+  let rightA = a%10;
+  let rightB = b%10;
+  let rightC = c%10;
+  if(rightA===rightB || rightB===rightC || rightC===rightA){
+    return 'right';
+  } else{
+    return 'not right';
+  }
+}
+console.log(checkedNot(10,11,11));
