@@ -263,3 +263,13 @@ function intChecked(a,b){
 }
 console.log(intChecked(4,4));
 // 41. Write a JavaScript program to check a set of three numbers; if the three numbers are the same return 30; otherwise return 20; and if two numbers are the same return 40.
+function checkedTree(a,b,c){
+  if(a===b && b===c & c===a){
+    return 30
+  }else if(a===b || b===c || c===a){
+    return 40;
+  } else{
+    return 20
+  }
+}
+console.log(checkedTree(20,10, 154));
