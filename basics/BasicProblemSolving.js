@@ -296,3 +296,16 @@ function checkedNot(a,b,c){
   }
 }
 console.log(checkedNot(10,11,11));
+// 44. Write a JavaScript program that evaluates three given integers to determine if any one of them is greater than or equal to 20 and less than at least one of the other two.  
+function evalNumbers(a, b, c) {
+  if ((a >= 20 && (a < b || a < c)) || 
+      (b >= 20 && (b < a || b < c)) || 
+      (c >= 20 && (c < a || c < b))) {
+    return 'right!';
+  }
+  return 'wrong!';
+}
+
+console.log(evalNumbers(19, 21, 18)); // Output: wrong!
+console.log(evalNumbers(22, 21, 18)); // Output: right!
+console.log(evalNumbers(19, 25, 21)); // Output: right!
