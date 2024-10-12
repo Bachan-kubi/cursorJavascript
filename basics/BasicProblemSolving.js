@@ -309,3 +309,14 @@ function evalNumbers(a, b, c) {
 console.log(evalNumbers(19, 21, 18)); // Output: wrong!
 console.log(evalNumbers(22, 21, 18)); // Output: right!
 console.log(evalNumbers(19, 25, 21)); // Output: right!
+// 45. Write a JavaScript program that checks two integer values and returns true if either one is 15 or if their sum or difference is 15.  
+function evaluate(a,b){
+  let c = a+b;
+  let d = Math.abs(a-b);
+  if(c===15||d ===15||a===15||b===15){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(evaluate(20,10));
