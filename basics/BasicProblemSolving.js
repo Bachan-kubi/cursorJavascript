@@ -320,3 +320,16 @@ function evaluate(a,b){
   }
 }
 console.log(evaluate(20,10));
+
+// 46. Write a JavaScript program to check two given non-negative integers if one (not both) is a multiple of 7 or 11.  
+function multiple(a,b){
+  let c = (a%7|| a%11);
+  let d = (b%7|| b%11);
+  
+  if((c&&!d)||(!c&&d)){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(multiple(7,20));
