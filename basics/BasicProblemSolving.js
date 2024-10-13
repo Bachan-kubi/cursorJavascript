@@ -333,3 +333,8 @@ function multiple(a,b){
   }
 }
 console.log(multiple(7,20));
+//47. Write a JavaScript program to check whether a given number exists in the range 40..10000. For example 40 presents in 40 and 4000
+function exist(a){
+  return a>=40&&a<=10000;
+}
+console.log(exist(41));
