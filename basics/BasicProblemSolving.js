@@ -339,3 +339,7 @@ function exist(a){
 }
 console.log(exist(41));
 // 48. Write a JavaScript program to reverse a given string. 
+function revStr(a){
+ return a.split('').reverse().join('')
+}
+console.log(revStr("kiky"));
