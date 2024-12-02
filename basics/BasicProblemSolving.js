@@ -338,3 +338,4 @@ function exist(a){
   return a>=40&&a<=10000;
 }
 console.log(exist(41));
+// 48. Write a JavaScript program to reverse a given string. 
