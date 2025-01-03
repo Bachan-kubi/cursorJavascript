@@ -371,3 +371,16 @@ function shiftLetters(str) {
 let inputString = "abc XYZ!";
 let result = shiftLetters(inputString);
 console.log(result);  // Output: "bcd YZA!"
+//50. Capitalize First Letter of Each Word in String
+function capFirstLetter(str){
+  let cap = str.split(" ").map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(' ');
+  return cap;
+}
+console.log(capFirstLetter('tui nai bole ore unmad'))
+//51 Write a JavaScript application that transforms a provided numerical value into hours and minutes.
+function transHM(s){
+  const hours = Math.floor(s/60);
+  const minutes = s%60;
+  return `${hours} hour(s) and ${minutes} minute(s)`;
+}
+console.log(transHM(200))
