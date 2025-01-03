@@ -383,4 +383,8 @@ function transHM(s){
   const minutes = s%60;
   return `${hours} hour(s) and ${minutes} minute(s)`;
 }
-console.log(transHM(200))
+console.log(transHM(200));
+//52 Write a JavaScript program to convert letters of a given string alphabetically.  
+function sorting(s){
+  
+}
