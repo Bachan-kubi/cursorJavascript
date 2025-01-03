@@ -343,3 +343,31 @@ function revStr(a){
  return a.split('').reverse().join('')
 }
 console.log(revStr("kiky"));
+//49 Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.  
+function shiftLetters(str) {
+    return str.split('').map(char => {
+        // Check if the character is a letter
+        if (/[a-zA-Z]/.test(char)) {
+            let code = char.charCodeAt(0);
+            
+            // If the character is a lowercase letter
+            if (code >= 97 && code <= 122) {
+                // Shift to the next letter, wrapping back to 'a' after 'z'
+                return String.fromCharCode(code === 122 ? 97 : code + 1);
+            }
+            
+            // If the character is an uppercase letter
+            if (code >= 65 && code <= 90) {
+                // Shift to the next letter, wrapping back to 'A' after 'Z'
+                return String.fromCharCode(code === 90 ? 65 : code + 1);
+            }
+        }
+        // If not a letter, return the character as is
+        return char;
+    }).join('');
+}
+
+// Example usage:
+let inputString = "abc XYZ!";
+let result = shiftLetters(inputString);
+console.log(result);  // Output: "bcd YZA!"
